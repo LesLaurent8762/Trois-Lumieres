@@ -18,3 +18,11 @@ sequence.forEach(item => {
         document.getElementById(item.id).classList.add("show");
     }, item.delay);
 });
+setTimeout(() => {
+
+    document
+        .getElementById("lastStar")
+        .classList
+        .add("show");
+
+},62000);
