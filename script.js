@@ -9,8 +9,9 @@ const sequence = [
     { id: "message", delay: 32000 },
     { id: "message2", delay: 38000 },
     { id: "final", delay: 43000 },
-    { id: "love", delay: 50000 }
-];
+    { id: "love", delay: 50000 },
+    { id: "signature", delay: 56000 }
+    ];
 
 sequence.forEach(item => {
     setTimeout(() => {
