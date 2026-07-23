@@ -1,0 +1,1 @@
+function reveal(){document.getElementById("secret").innerHTML="👶 Bébé arrive en 2026.<br><br>Nous avons tellement hâte de vivre cette aventure avec vous. ❤️";}

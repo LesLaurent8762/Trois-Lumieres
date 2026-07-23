@@ -1,2 +1,2 @@
-# Trois-Lumieres
-Parce que certaines familles brillent un peu plus fort lorsqu'une nouvelle étoile apparaît...
+# Trois Lumières
+Ajoutez votre échographie dans assets/echo.jpg.
