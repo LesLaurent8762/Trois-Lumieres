@@ -281,3 +281,59 @@ font-size:1.05rem;
 }
 
 }
+/* ==========================
+   VERSION MOBILE
+========================== */
+
+@media screen and (max-width:768px){
+
+.container{
+    width:94%;
+    margin:25px auto;
+    padding:25px 18px;
+}
+
+.title{
+    font-size:2.2rem;
+}
+
+.line{
+    font-size:1.15rem;
+    line-height:1.7;
+    margin:16px 0;
+}
+
+#echo{
+    width:100%;
+    max-width:360px;
+    border-radius:18px;
+}
+
+#girls{
+    font-size:2.3rem;
+    margin-top:25px;
+}
+
+#message,
+#message2{
+    font-size:1.15rem;
+    line-height:1.7;
+}
+
+#line11{
+    font-size:2.5rem;
+    line-height:1.2;
+}
+
+#line12,
+#line13{
+    font-size:1.2rem;
+    line-height:1.7;
+}
+
+#signature{
+    font-size:1.1rem;
+    margin-top:35px;
+}
+
+}
