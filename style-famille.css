@@ -10,281 +10,139 @@
 }
 
 body{
-
     font-family:Georgia,serif;
-
-    background:
-    radial-gradient(circle at top,#13254d,#030812);
-
+    background:radial-gradient(circle at top,#13254d,#030812);
     color:white;
-
     overflow-x:hidden;
-
     min-height:100vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
 }
 
 /* ---------------- Etoiles de fond ---------------- */
 
 #stars{
-
     position:fixed;
-
     inset:0;
-
-    background-image:
-    radial-gradient(white 1px,transparent 1px);
-
+    background-image:radial-gradient(white 1px,transparent 1px);
     background-size:60px 60px;
-
     opacity:.25;
-
     animation:sky 80s linear infinite;
-
     z-index:-1;
-
 }
 
 @keyframes sky{
-
-    from{
-        transform:translateY(0);
-    }
-
-    to{
-        transform:translateY(60px);
-    }
-
+    from{transform:translateY(0);}
+    to{transform:translateY(60px);}
 }
 
-/* ---------------- Carte ---------------- */
+/* ---------------- Conteneur ---------------- */
 
 .container{
-
     width:100%;
-
     display:flex;
-
     justify-content:center;
-
     padding:40px;
-
 }
 
 .scene{
-
     width:760px;
-
     max-width:95%;
-
     background:rgba(12,20,40,.80);
-
     backdrop-filter:blur(12px);
-
     border-radius:25px;
-
     padding:70px;
-
     text-align:center;
-
-    box-shadow:
-        0 0 45px rgba(255,255,255,.08);
-
+    box-shadow:0 0 45px rgba(255,255,255,.08);
 }
 
 /* ---------------- Titre ---------------- */
 
 .title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:nowrap;
 
-    font-size:3.2rem;
-
+    font-size:3.1rem;
     margin-bottom:50px;
-
     color:white;
-
 }
 
 #star1,
 #star2,
 #star3{
-
     color:#FFD76A;
-
-    text-shadow:
-    0 0 10px #FFD76A;
-
+    text-shadow:0 0 10px #FFD76A;
 }
 
 .hidden-star{
-
     opacity:0;
-
     transition:opacity 3s;
-
 }
 
 .hidden-star.show{
-
     opacity:1;
+}
 
+/* ---------------- Apparitions ---------------- */
+
+.hidden{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 2s,transform 2s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 /* ---------------- Textes ---------------- */
 
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(18px);
-
-    transition:
-    opacity 2s,
-    transform 2s;
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
 p{
-
     margin-top:20px;
-
     line-height:1.9;
-
     font-size:1.25rem;
-
 }
 
 .quote{
-
     font-style:italic;
-
     color:#FFEAA7;
-
     margin-top:40px;
-
 }
 
 /* ---------------- Echographie ---------------- */
 
 #echo{
-
     width:100%;
-
     max-width:500px;
-
     margin-top:50px;
-
     border-radius:18px;
-
     border:4px solid white;
-
-    box-shadow:
-        0 0 35px rgba(255,255,255,.25);
-
+    box-shadow:0 0 35px rgba(255,255,255,.25);
 }
 
 /* ---------------- Révélation ---------------- */
 
 #line11{
-
     margin-top:55px;
-
-    font-size:2.9rem;
-
+    font-size:2.8rem;
     color:#FFD76A;
-
+    line-height:1.25;
 }
 
 /* ---------------- Signature ---------------- */
 
 #signature{
-
     margin-top:45px;
-
-    font-size:1.4rem;
-
+    font-size:1.35rem;
     color:#FFD76A;
-
     font-style:italic;
-
 }
 
-/* ---------------- Mobile ---------------- */
-
-@media(max-width:700px){
-
-.scene{
-
-padding:35px;
-
-}
-
-.title{
-    font-size:1.8rem;
-    white-space:nowrap;
-    text-align:center;
-}
-
-}
-
-#line11{
-
-font-size:2rem;
-
-}
-
-p{
-
-font-size:1.05rem;
-
-}
-
-}
-@media (max-width: 768px){
-
-.container{
-    width:92%;
-    padding:24px 20px;
-    margin:30px auto;
-}
-
-.title{
-    font-size:1.65rem;
-    white-space:nowrap;
-    text-align:center;
-}
-
-.line{
-    font-size:1.15rem;
-    line-height:1.8;
-}
-
-#echo{
-    width:100%;
-    max-width:420px;
-}
-
-#line11{
-    font-size:2.1rem;
-}
-
-#signature{
-    font-size:1.05rem;
-    margin-top:30px;
-}
-
-}
 /* ==================================================
    VERSION MOBILE
 ================================================== */
@@ -296,83 +154,49 @@ body{
 }
 
 .container{
-
     width:100%;
-
     padding:18px;
-
 }
 
 .scene{
-
     width:100%;
-
     max-width:100%;
-
     padding:35px 22px;
-
     border-radius:20px;
-
 }
 
 .title{
-
-    font-size:1.55rem;
-
+    font-size:1.45rem;
+    gap:6px;
     white-space:nowrap;
-
-    text-align:center;
-
-    margin-bottom:35px;
-
+    margin-bottom:30px;
 }
 
 p{
-
     font-size:1.05rem;
-
     line-height:1.75;
-
     margin-top:16px;
-
 }
 
 #echo{
-
     width:100%;
-
     max-width:100%;
-
-    margin-top:35px;
-
-    border-radius:15px;
-
+    margin-top:30px;
 }
 
 #line11{
-
-    font-size:2rem;
-
-    line-height:1.25;
-
+    font-size:1.9rem;
     margin-top:35px;
-
 }
 
 .quote{
-
     font-size:1rem;
-
-    margin-top:28px;
-
+    margin-top:30px;
 }
 
 #signature{
-
     font-size:1rem;
-
     margin-top:30px;
-
 }
 
 }
