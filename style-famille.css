@@ -249,3 +249,35 @@ font-size:1.05rem;
 }
 
 }
+@media (max-width: 768px){
+
+.container{
+    width:92%;
+    padding:24px 20px;
+    margin:30px auto;
+}
+
+.title{
+    font-size:2.2rem;
+}
+
+.line{
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+#echo{
+    width:100%;
+    max-width:420px;
+}
+
+#line11{
+    font-size:2.1rem;
+}
+
+#signature{
+    font-size:1.05rem;
+    margin-top:30px;
+}
+
+}
